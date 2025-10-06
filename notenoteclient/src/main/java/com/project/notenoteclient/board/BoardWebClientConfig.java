@@ -10,7 +10,7 @@ public class BoardWebClientConfig {
     @Bean("boardWebClient")
     public WebClient boardWebClient(WebClient.Builder builder) {
         return builder
-                .baseUrl("http://localhost:8082/api/boards")
+                .baseUrl("http://localhost:8080/api/boards")
                 .build();
     }
 }

@@ -18,7 +18,7 @@ public class UsersWebClientConfig {
                              TokenRefreshFilter tokenRefreshFilter,
                              AutoCookieFilter autoCookieFilter) {
         return builder
-            .baseUrl("http://localhost:8082")
+            .baseUrl("http://localhost:8080")
             .filter(autoCookieFilter)    // ต้องใส่ก่อน TokenRefreshFilter
             .filter(tokenRefreshFilter)
             .build();
